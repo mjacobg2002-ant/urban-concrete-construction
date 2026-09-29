@@ -119,6 +119,14 @@
     apply();
   });
 
+  /* ---------- Reduced-motion: pause the hero background video ---------- */
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll(".hero__video").forEach(function (v) {
+      v.removeAttribute("autoplay");
+      v.pause();
+    });
+  }
+
   /* ---------- Footer year ---------- */
   var year = document.querySelector("[data-year]");
   if (year) year.textContent = new Date().getFullYear();

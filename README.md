@@ -63,6 +63,10 @@ monogram logo. No stock-template feel.
 - **Logo** — the header/footer use a clean SVG "UC" monogram wordmark. If you have a vector
   (SVG/PDF) of an official logo, drop it in `assets/img/` and swap the inline SVG for an
   `<img>`.
+- **Hero video** — the hero uses a lightly-frosted looping background video
+  (`assets/video/hero-720.mp4`, muted/autoplay/loop, ~2 MB, 720p) from Pexels
+  (free license), with `hero-poster.jpg` as the poster/fallback and reduced-motion
+  users getting the still frame. Swap the files to change it.
 - **Photography** — all project photos are high-quality **placeholder** construction images.
   Replace the files in `assets/img/` with real Urban Concrete photos, keeping the same
   filenames, and the site updates automatically. The before/after slider and gallery are
